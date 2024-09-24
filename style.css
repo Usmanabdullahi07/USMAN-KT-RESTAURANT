@@ -7,11 +7,14 @@
 }
 .header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: rgba(245, 245, 245, 0.774);
     color: green;
+    width: 90vw;
+    margin: auto;
 }
+
 .my-header{
     width: 40vw;
     height: 12vh;
@@ -78,21 +81,30 @@ ion-icon{
     background-color: blue;
     
 } */
+.food-parent :hover{
+    box-shadow: 4px 12px 7px black;
+}
 
 .food-parent{
     display: flex;
+    flex-wrap: wrap;
     width: 70vw;
     margin: auto;
     gap: 2rem;
 
     
 }
+.food-bracket :hover{
+    box-shadow: 4px 7px 7px black;
+}
+
 .food-bracket{
     height: 350px;
     width:300px;
     border:1px solid black;
     /* background-color: gray; */
     display:block;
+    border-radius: 1rem;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -115,5 +127,131 @@ button{
     color: black;
     padding: 0.2rem;
     border-radius: 2rem;
+
+}
+.my-header a {
+    text-decoration: none;
+}
+
+@media screen and ( max-width: 720px) {
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    height: 25vh;
+    margin-right: 2rem;
+    background-color: rgba(245, 245, 245, 0.774);
+    color: green;
+}
+
+.button-group {
+    height: 40%;
+    display: block;
+    
+}
+.button-group button {
+    margin-bottom: 2rem;
+    width: 60%;
+}
+
+.title h1{
+    width: 20vh;
+    margin-left: 1rem;
+}
+
+.my-header{
+    width: 13vw;
+    line-height: 1.5rem;
+    display: block;
+    /* margin-right: .3rem; */
+    justify-content: end;
+    align-items: center;
+    color: black;
+    font-size: 15px;
+    /* margin: auto; */
+
+}
+
+.my-header a {
+    text-decoration: none;
+}
+.my-header :hover{
+    background-color: rgb(20, 141, 20);
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+
+
+
+}
+.parent-div{
+    display: block;
+ 
+}
+
+.parent-div .div-1{
+   text-align: center;
+   margin-top: 2rem;
+}
+
+.parent-div .image-div {
+    display:flex;
+    justify-content: center;
+
+}
+
+.image-div button{
+    display: none;
+}
+
+
+.food-bracket{
+    margin-bottom: 3rem;
+    border-radius: .8rem;
+}
+.food-bracket :hover{
+    box-shadow: 4px 7px 7px black;
+}
+
+.parent-div .image-div img{
+    width: 300px;
+    height: 300px;
+    margin-bottom:  4rem;
+}
+
+.food-parent{
+  display:block;
+  margin-left: 7rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  cursor: pointer;
+
+
+}
+
+.food-parent :hover{
+    box-shadow: 4px 15px 7px black;
+}
+
+.food-bracket{
+    height: 300px;
+    margin-top: 6rem;
+    width:240px;
+    border:1px solid black;
+    text-align: center;
+    
+}
+
+.food-bracket img{
+    width: 120px;
+    height: 120px;
+}
+
+
+.food-parent .food-bracket{
+    margin-bottom: 6rem;
+}
 
 }
